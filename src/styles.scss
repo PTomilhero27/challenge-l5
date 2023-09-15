@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+html, body { 
+    height: 100%;
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+p {
+    margin: 0 !important;
+}
+
+.h-pages {
+    height: calc(100vh - 90.5px);
+}
+
+.h-pages-breadcrumb {
+    height: calc(100vh - (90.5px + 60px));
+}

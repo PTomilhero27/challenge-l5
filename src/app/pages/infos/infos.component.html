@@ -1,0 +1,24 @@
+
+<div class="pt-5 flex justify-between items-center mb-4 md:mb-0">
+    <app-breadcrumb [breadCrumb]="breadCrumb" ></app-breadcrumb>
+
+    <div class="h-10 w-full max-w-md relative">
+        <input (keyup)="onInput($event)" class="text-[#999] text-sm h-10 w-full max-w-md rounded-md border border-[#777] px-4" placeholder="Pesquisar" matInput type="text" [(ngModel)]="value">
+        <button class="absolute top-[20%] right-0" *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button>
+    </div>
+</div>
+
+<main class="h-pages-breadcrumb flex items-center justify-center">
+    <div #scrollContainer class="w-full max-w-4xl h-full max-h-[500px] border border-[#777] rounded-lg overflow-y-auto">
+        <div class="lg:py-10 lg:px-28 p-3" >
+            <div *ngFor="let item of infos" (click)="details(item)" class="cursor-pointer h-16 border-b items-center border-[#DDD] flex justify-between">
+                <p class="text-sm">{{item.name}}</p>
+                <button>
+                    <img src="../../../assets/svg/chevron-right.svg" alt="Icone seta para direita">
+                </button>
+            </div>
+        </div>
+    </div>
+</main>

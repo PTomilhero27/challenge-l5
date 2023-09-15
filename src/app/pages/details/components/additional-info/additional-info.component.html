@@ -1,0 +1,151 @@
+
+<section class="flex flex-col gap-4 h-52 overflow-y-auto">
+
+
+    <ng-container #personagem>
+
+        <div *ngIf="detalhes.homeworld?.name" class="flex items-center gap-2">
+            <p class="text-sm" >Terra natal: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.homeworld.name}}</span>
+        </div>
+        
+        <div *ngIf="detalhes?.birth_year" class="flex items-center gap-2">
+            <p class="text-sm" >Nascimento: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.birth_year}}</span>
+        </div>
+        
+        <div *ngIf="detalhes?.height" class="flex items-center gap-2">
+            <p class="text-sm" >Altura: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.height}}</span>
+        </div>
+        
+        <div *ngIf="detalhes?.gender" class="flex items-center gap-2">
+            <p class="text-sm" >Gênero: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.gender}}</span>
+        </div>
+        
+        <div *ngIf="detalhes?.hair_color" class="flex items-center gap-2">
+            <p class="text-sm" >Cor do cabelo: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.hair_color}}</span>
+        </div>
+        
+        <div *ngIf="detalhes?.hair_color" class="flex items-center gap-2">
+            <p class="text-sm" >Cor do olho: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.hair_color}}</span>
+        </div>
+
+    </ng-container>
+
+    <ng-container #planeta>
+        <div *ngIf="detalhes?.diameter" class="flex items-center gap-2">
+            <p class="text-sm" >Diametro: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.diameter}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.terrain" class="flex items-center gap-2">
+            <p class="text-sm" >Terreno: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.terrain}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.climate" class="flex items-center gap-2">
+            <p class="text-sm" >Clima: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.climate}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.population" class="flex items-center gap-2">
+            <p class="text-sm" >População: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.population}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.gravity" class="flex items-center gap-2">
+            <p class="text-sm" >Gravidade: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.gravity}}</span>
+        </div>
+
+
+    </ng-container>
+
+    <ng-container #Filmes>
+
+        <div *ngIf="detalhes?.director" class="flex items-center gap-2">
+            <p class="text-sm" >Diretor: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.director}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.producer" class="flex items-center gap-2">
+            <p class="text-sm" >Produtor: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.producer}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.opening_crawl" class="mb-2 gap-2">
+            <p class="text-sm" >Sequência de abertura: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.opening_crawl}}</span>
+        </div>
+
+    </ng-container>
+
+    <ng-container #Especies>
+
+        <div *ngIf="detalhes?.language" class="flex items-center gap-2">
+            <p class="text-sm" >Idioma: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.language}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.skin_colors" class="flex items-center gap-2">
+            <p class="text-sm" >Cor de pele: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.skin_colors}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.hair_colors" class="flex items-center gap-2">
+            <p class="text-sm" >Cor do cabelo: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.hair_colors}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.eye_colors" class="flex items-center gap-2">
+            <p class="text-sm" >Cor dos olhos: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.eye_colors}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.average_height" class="flex items-center gap-2">
+            <p class="text-sm" >Altura média: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.average_height}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.average_lifespan" class="flex items-center gap-2">
+            <p class="text-sm" >Vida útil: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.average_lifespan}}</span>
+        </div>
+
+
+    </ng-container>
+
+    <ng-container #NaveEVeiculos>
+
+        <div *ngIf="detalhes?.passengers" class="flex items-center gap-2">
+            <p class="text-sm" >Passageiros: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.passengers}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.model" class="flex items-center gap-2">
+            <p class="text-sm" >Modelo: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.model}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.manufacturer" class="flex items-center gap-2">
+            <p class="text-sm" >Fabricante: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.manufacturer}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.length" class="flex items-center gap-2">
+            <p class="text-sm" >Tamanho: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.length}}</span>
+        </div>
+
+        <div *ngIf="detalhes?.cost_in_credits" class="flex items-center gap-2">
+            <p class="text-sm" >Custo em créditos: </p>
+            <span class="cursor-pointer text-sm text-[#444] font-bold">{{detalhes.cost_in_credits}}</span>
+        </div>
+
+    </ng-container>
+
+</section>

@@ -1,0 +1,35 @@
+<div class="pt-5 h-10 flex justify-between items-center">
+    <app-breadcrumb [breadCrumb]="breadCrumb" ></app-breadcrumb>
+</div>
+
+<main class="h-pages-breadcrumb pt-8 md:pt-0 flex items-center justify-center">
+    <div class="w-full max-w-4xl h-full max-h-[500px] border border-[#777] rounded-lg">
+        <div class="px-7 py-3 flex flex-col justify-between h-full">
+
+            <div class="border-b border-[#DDD]">
+                    <h1 class="text-4xl">{{details.name}}</h1>
+            </div>
+
+            <app-additional-info [detalhes]="details"></app-additional-info>
+
+            <div class="h-[30%] md:h-auto">
+                <p class="text-2xl">
+                    Links relacionado
+                </p>
+
+                <div class="border-t border-[#DDD] p-4 md:flex md:gap-10 h-full max-h-24 md:max-h-48 overflow-y-auto">
+                    <div *ngFor="let bloco of blocos" class="mb-4 md:mb-0">
+                        <p class="text-sm">{{ bloco.title }}</p>
+                        <ng-container *ngIf="bloco.info">
+                            <div (click)="newDetails(bloco, item)" *ngFor="let item of bloco.info">
+                                <span class="text-sm text-[#444] cursor-pointer">{{ item.name }}</span>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</main>

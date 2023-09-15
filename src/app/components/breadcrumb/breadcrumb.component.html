@@ -1,0 +1,9 @@
+<div class=" flex gap-4">
+
+    <div *ngFor="let item of breadCrumb" class="flex gap-4">
+        <button class="flex gap-4 items-center" (click)="route(item)">
+            <p>{{item.title}}</p>
+            <img class="w-2" src="../../../assets/svg/chevron-right.svg" alt="Seta para direita">
+        </button>
+    </div>
+</div>
