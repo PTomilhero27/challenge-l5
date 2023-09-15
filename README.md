@@ -4,7 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` ou com npm run start ou yarn start para iniciar o servidor de desenvolvimento. inicia para `http://localhost:4200/`. A aplicação vai dar reload quando voce alterar e salvar um arquivo
+
+ou se preferir testar sem precisar baixar o projeto, está feito o deploy na vercel `https://challenge-l5.vercel.app/`
 
 ## Code scaffolding
 
